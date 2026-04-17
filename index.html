@@ -118,12 +118,13 @@
 <a href="index.html" class="nav-item nav-link"
    style="font-family:'Times New Roman',serif;
           font-weight:900;
-          color:#dc2626;
+          color:white;
           display:inline-block;
           position:relative;
-          padding-bottom:8px;
+          padding-bottom:2px;
           text-decoration:none;">
    Home
+   
    <span style="position:absolute;
                 left:50%;
                 bottom:0;
@@ -138,10 +139,10 @@
 <a href="about.html" class="nav-item nav-link"
    style="font-family:'Times New Roman',serif;
           font-weight:900;
-          color:#dc2626;
+          color:white;
           display:inline-block;
           position:relative;
-          padding-bottom:8px;
+          padding-bottom:2px;
           text-decoration:none;">
    About
    <span style="position:absolute;
@@ -158,10 +159,10 @@
 <a href="service.html" class="nav-item nav-link"
    style="font-family:'Times New Roman',serif;
           font-weight:900;
-          color:#dc2626;
+          color:white;
           display:inline-block;
           position:relative;
-          padding-bottom:8px;
+          padding-bottom:2px;
           text-decoration:none;">
    Service
    <span style="position:absolute;
@@ -178,10 +179,10 @@
 <a href="contact.html" class="nav-item nav-link"
    style="font-family:'Times New Roman',serif;
           font-weight:900;
-          color:#dc2626;
+          color:white;
           display:inline-block;
           position:relative;
-          padding-bottom:8px;
+          padding-bottom:2px;
           text-decoration:none;">
    Contact
    <span style="position:absolute;
@@ -214,20 +215,40 @@
 
 
 /* GLOBAL TEXT STYLE */
-.navbar-brand span,
-.navbar-nav .nav-link,
-.dropdown-item {
+.navbar-brand span{
     font-family: "Times New Roman", serif !important;
     font-weight: 900 !important;
     color: #dc2626 !important; /* Maple red */
     text-align: center;
 }
+.navbar-nav .nav-link,
+.dropdown-item {
+    font-family: "Times New Roman", serif !important;
+    font-weight: 900 !important;
+    color: white !important;
+    text-align: center;
+
+    background-color: #a41a1f; /* Maple red */
+    
+    border: 3px solid #061944; /* navy outline (correct way) */
+    border-radius: 1px;
+
+    transition: all 0.4s ease;
+}
+
+/* hover effect */
+.dropdown-item:hover {
+    background-color: #244ca7;
+    color: white !important;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(36,76,167,0.3);
+}
 
 /* NAVBAR ITEM BASE */
 .navbar-nav .nav-link {
     position: relative;
-    padding: 8px 12px;
-    margin: 5px;
+    padding: 6px 6px;
+    margin: 0.2px;
     display: inline-block;
     white-space: nowrap;
     transition: all 0.3s ease;
@@ -238,11 +259,11 @@
     content: "";
     position: absolute;
     inset: 0;
-    background: radial-gradient(circle at left, rgba(74, 3, 3, 0.3), transparent 55%),
-                radial-gradient(circle at right, rgba(1, 11, 35, 0.3), transparent 55%);
+    background: radial-gradient(circle at left, rgba(85, 2, 2, 0.3), transparent 100%),
+                radial-gradient(circle at right, rgba(101, 8, 3, 0.3), transparent 100%);
     z-index: -1;
     border-radius: 6px;
-    filter: brightness(4.4);
+    filter: brightness(9.9);
 }
 /* ✨ ANIMATED UNDERLINE */
 .navbar-nav .nav-link::after {
@@ -255,6 +276,8 @@
     background: linear-gradient(90deg, #dc2626, #244ca7);
     transition: all 0.4s ease;
     transform: translateX(-50%);
+       margin: 0px;   /* ❌ removed space */
+         display: block; /* keeps them tight in column */
 }
 
 .navbar-nav .nav-link:hover::after {
@@ -272,6 +295,8 @@
     justify-content: center;
     text-align: center;
     width: 100%;
+        gap: 0px !important;
+
 }
 
 /* 🔥 ONE BY ONE APPEAR DELAY */
@@ -282,10 +307,10 @@
 }
 
 .navbar-nav .nav-item:nth-child(1) { animation-delay: 0.1s; }
-.navbar-nav .nav-item:nth-child(2) { animation-delay: 0.2s; }
-.navbar-nav .nav-item:nth-child(3) { animation-delay: 0.3s; }
-.navbar-nav .nav-item:nth-child(4) { animation-delay: 0.4s; }
-.navbar-nav .nav-item:nth-child(5) { animation-delay: 0.5s; }
+.navbar-nav .nav-item:nth-child(2) { animation-delay: 0.3s; }
+.navbar-nav .nav-item:nth-child(3) { animation-delay: 0.4s; }
+.navbar-nav .nav-item:nth-child(4) { animation-delay: 0.5s; }
+.navbar-nav .nav-item:nth-child(5) { animation-delay: 0.6s; }
 
 @keyframes fadeUp {
     to {
