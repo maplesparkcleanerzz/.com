@@ -2,13 +2,71 @@
 /*** Spinner Start ***/
 /*** Spinner ***/
 /* ALL cards */
-.nav-link {
-    color: #fff !important;
-    transition: 0.3s;
+/* ===== Base link styling (desktop unchanged visually) ===== */
+.custom-navbar .nav-link {
+  color: rgba(1, 56, 98, 0.9) !important;
+  font-weight: 600;
+  transition: all 0.3s ease;
 }
 
+/* Keep your hover exactly same + light enhancement */
 .nav-link:hover {
-    color: #060403 !important;
+  color: #a40b06 !important;
+  text-shadow: 0 0 8px rgba(2, 2, 2, 0.7);
+}
+
+/* Active link (subtle only, no layout change) */
+.navbar-nav .nav-link.active {
+  color: #013862 !important;
+}
+
+/* Dropdown (desktop + mobile safe styling only visuals) */
+.dropdown-menu {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.dropdown-item:hover {
+  background: #a40b06;
+  color: #fff;
+}
+
+/* ===== MOBILE ONLY SIDEBAR PREMIUM STYLE ===== */
+@media (max-width: 991px) {
+
+  .navbar-collapse {
+    background: linear-gradient(145deg, #ffffff, #f7f9fc);
+    backdrop-filter: blur(10px);
+    padding: 14px;
+    border-radius: 0 0 18px 18px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.18);
+  }
+
+  .navbar-nav .nav-link {
+    display: block;
+    padding: 12px 14px;
+    margin: 6px 0;
+    border-radius: 10px;
+    color: rgba(1, 56, 98, 0.9) !important;
+    background: rgba(1, 56, 98, 0.04);
+  }
+
+  .navbar-nav .nav-link:hover {
+    background: rgba(164, 11, 6, 0.08);
+    transform: translateX(4px);
+  }
+
+  .navbar-nav .nav-link.active {
+    border-left: 4px solid #a40b06;
+    background: rgba(1, 56, 98, 0.08);
+  }
+}
+.custom-navbar .nav-link {
+  color: rgba(1, 56, 98, 0.9) !important;
+}
+.nav-link:hover {
+    color: #a40b06 !important;
     text-shadow: 0 0 8px rgba(2, 2, 2, 0.7);
 }
 
