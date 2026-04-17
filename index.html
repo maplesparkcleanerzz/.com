@@ -87,7 +87,7 @@
         <!-- Navbar & Hero Start -->
         <div class="container-fluid nav-bar p-0">
             <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0">
-<!-- NAVBAR with SMALL hamburger -->
+<!-- NAVBAR - Logo stays ONE ROW -->
 <a href="" class="navbar-brand p-0">
     <div class="d-flex align-items-center" 
          style="gap:6px; flex-wrap:nowrap; overflow:hidden; height:70px; font-size:0;">
@@ -102,80 +102,81 @@
     </div>
 </a>
 
-<!-- SMALLER HAMBURGER BUTTON -->
-<button class="navbar-toggler p-1 border-0" type="button" 
+<!-- SINGLE PROFESSIONAL ICON BUTTON -->
+<button class="navbar-toggler p-1 border-0 shadow-sm" type="button" 
         data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-        style="padding:4px 6px; line-height:1;">
-    <span class="navbar-toggler-icon" style="font-size:14px;"></span>
+        style="width:42px; height:42px; border-radius:8px; 
+               background:linear-gradient(135deg, #1e3a5f, #0f172a);
+               color:#fff; font-size:16px; line-height:1; box-shadow:0 4px 12px rgba(30,58,95,0.3);">
+    <i class="fas fa-bars" style="font-size:18px;"></i>
 </button>
 
-<!-- COLORFUL SIDEBAR SECTIONS -->
+<!-- PROFESSIONAL Maple Red + Navy Sidebar -->
 <div class="collapse navbar-collapse" id="navbarCollapse">
-    <ul class="navbar-nav ms-auto mb-2 mb-lg-0" style="gap:10px;">
+    <ul class="navbar-nav ms-auto mb-2 mb-lg-0" style="gap:4px;">
         
-        <!-- HOME SECTION - Green -->
+        <!-- NAVY BLUE SECTION -->
         <li class="nav-item">
-            <a class="nav-link px-3 py-2 rounded-3" href="#" 
-               style="background:linear-gradient(135deg, #28a745, #20c997); 
-                      color:white; font-weight:600; box-shadow:0 4px 12px rgba(40,167,69,0.3);
-                      transition:all 0.3s ease; border:2px solid transparent;">
-                🏠 HOME
+            <a class="nav-link px-4 py-2 rounded-3 fw-semibold" href="#" 
+               style="background:linear-gradient(135deg, #1e3a5f, #0f172a); 
+                      color:#ffffff; border:2px solid #334155; 
+                      box-shadow:0 4px 12px rgba(30,58,95,0.3);
+                      transition:all 0.3s ease; font-size:15px;">
+                🏠 Home
             </a>
         </li>
         
-        <!-- SERVICES SECTION - Blue -->
+        <!-- MAPLE RED SECTION -->
         <li class="nav-item">
-            <a class="nav-link px-3 py-2 rounded-3" href="#" 
-               style="background:linear-gradient(135deg, #007bff, #0056b3); 
-                      color:white; font-weight:600; box-shadow:0 4px 12px rgba(0,123,255,0.3);
-                      transition:all 0.3s ease; border:2px solid transparent;">
-                🧼 SERVICES
+            <a class="nav-link px-4 py-2 rounded-3 fw-semibold" href="#" 
+               style="background:linear-gradient(135deg, #dc2626, #b91c1c); 
+                      color:#ffffff; border:2px solid #991b1b; 
+                      box-shadow:0 4px 12px rgba(220,38,38,0.4);
+                      transition:all 0.3s ease; font-size:15px;">
+                🧼 Services
             </a>
         </li>
         
-        <!-- ABOUT SECTION - Orange -->
+        <!-- NAVY BLUE SECTION -->
         <li class="nav-item">
-            <a class="nav-link px-3 py-2 rounded-3" href="#" 
-               style="background:linear-gradient(135deg, #fd7e14, #e65c00); 
-                      color:white; font-weight:600; box-shadow:0 4px 12px rgba(253,126,20,0.3);
-                      transition:all 0.3s ease; border:2px solid transparent;">
-                ℹ️ ABOUT
+            <a class="nav-link px-4 py-2 rounded-3 fw-semibold" href="#" 
+               style="background:linear-gradient(135deg, #1e3a5f, #0f172a); 
+                      color:#ffffff; border:2px solid #334155; 
+                      box-shadow:0 4px 12px rgba(30,58,95,0.3);
+                      transition:all 0.3s ease; font-size:15px;">
+                ℹ️ About
             </a>
         </li>
         
-        <!-- CONTACT SECTION - Purple -->
-        <li class="nav-item">
-            <a class="nav-link px-3 py-2 rounded-3" href="#" 
-               style="background:linear-gradient(135deg, #6f42c1, #5a2d91); 
-                      color:white; font-weight:600; box-shadow:0 4px 12px rgba(111,66,193,0.3);
-                      transition:all 0.3s ease; border:2px solid transparent;">
-                📞 CONTACT
-            </a>
-        </li>
-        
-        <!-- BOOK NOW - Red CTA -->
+        <!-- MAPLE RED CTA -->
         <li class="nav-item">
             <a class="nav-link px-4 py-2 rounded-3 fw-bold" href="#" 
-               style="background:linear-gradient(135deg, #dc3545, #c82333); 
-                      color:white; box-shadow:0 6px 20px rgba(220,53,69,0.4);
+               style="background:linear-gradient(135deg, #dc2626, #b91c1c); 
+                      color:#ffffff; border:2px solid #991b1b; 
+                      box-shadow:0 6px 20px rgba(220,38,38,0.5);
                       transform:translateY(0); transition:all 0.3s ease;
-                      border:2px solid #fff; text-decoration:none;">
-                🚀 BOOK NOW
+                      font-size:15px; letter-spacing:0.5px;">
+                📞 Book Now
             </a>
         </li>
     </ul>
 </div>
 
 <style>
-.navbar-nav { display:flex !important; flex-wrap:nowrap !important; }
+.navbar-nav { display:flex !important; flex-wrap:nowrap !important; gap:4px !important; }
 @media (max-width:991px) {
-    .navbar-nav { flex-direction:column !important; gap:8px !important; }
+    .navbar-nav { flex-direction:column !important; gap:8px !important; width:100%; }
 }
 .nav-link:hover {
-    transform:translateY(-3px) !important;
-    box-shadow:0 8px 25px rgba(0,0,0,0.2) !important;
+    transform:translateY(-2px) !important;
+    box-shadow:0 8px 25px rgba(0,0,0,0.3) !important;
+    border-color:#ffffff20 !important;
 }
+.navbar-toggler:focus { box-shadow:0 0 0 0.2rem rgba(30,58,95,0.25) !important; }
 </style>
+
+<!-- ADD FontAwesome for icon (or use SVG) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
 
  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
