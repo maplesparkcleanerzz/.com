@@ -87,26 +87,25 @@
         <!-- Navbar & Hero Start -->
         <div class="container-fluid nav-bar p-0">
             <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0">
-<a href="" class="navbar-brand p-0"
-   style="display:flex !important;
-          align-items:center;
-          flex-wrap:nowrap !important;
-          white-space:nowrap;
-          overflow:hidden;">
+<a href="" class="navbar-brand p-0">
+    <h1 class="display-5 text-secondary m-0 d-flex align-items-center" 
+        style="gap:8px; flex-wrap:nowrap; overflow:hidden; font-size:0;">
+        
+        <img src="logo.jpg" alt="Travisa logo"
+             style="width:clamp(80px, 12vw, 100px); height:clamp(60px, 9vw, 80px); 
+                    object-fit:contain; flex-shrink:0;" />
+        
+        <span style="font-size:clamp(16px, 4vw, 22px); 
+                     white-space:nowrap; overflow:hidden; text-overflow:ellipsis; 
+                     line-height:1.1; font-weight:600;">
+            MAPLESPARK CLEANERS
+        </span>
 
-    <img src="logo.jpg" alt="Travisa logo"
-         style="width:90px; height:75px; object-fit:contain; flex-shrink:0;" />
+    </h1>
+</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
 
-    <span style="
-        font-size:clamp(16px, 4vw, 28px);
-        white-space:nowrap;
-        line-height:1;
-        flex-shrink:0;
-    ">
-        MAPLESPARK CLEANERS
-    </span>
-
-</a>  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+ <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="fa fa-bars"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -172,59 +171,7 @@
     }
 }
 </style>
- <button class="carousel-control-prev custom-carousel-btn" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
-    <span class="custom-icon">&#10094;</span>
-    <span class="visually-hidden-focusable">Previous</span>
-</button>
 
-<button class="carousel-control-next custom-carousel-btn" type="button" data-bs-target="#carouselId" data-bs-slide="next">
-    <span class="custom-icon">&#10095;</span>
-    <span class="visually-hidden-focusable">Next</span>
-</button>
-
-<style>
-.custom-carousel-btn{
-    width:60px;
-    height:60px;
-    top:50%;
-    transform:translateY(-50%);
-    opacity:1;
-}
-
-/* MapleSpark gradient button */
-.custom-carousel-btn .custom-icon{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    width:60px;
-    height:60px;
-    border-radius:50%;
-    
-    background: linear-gradient(135deg, #d10000, #0b1f3a);
-    
-    color:#fff;
-    font-size:26px;
-    font-weight:bold;
-    
-    box-shadow: 0 8px 20px rgba(11, 31, 58, 0.4),
-                0 6px 18px rgba(209, 0, 0, 0.25);
-    
-    transition: all 0.3s ease;
-}
-
-/* hover glow */
-.custom-carousel-btn:hover .custom-icon{
-    transform: scale(1.12);
-    box-shadow: 0 0 25px rgba(209, 0, 0, 0.6),
-                0 0 25px rgba(11, 31, 58, 0.6);
-}
-
-/* remove default bootstrap arrows */
-.carousel-control-prev-icon,
-.carousel-control-next-icon{
-    display:none;
-}
-</style>
             </div>
         </div>
         <!-- Carousel End -->
