@@ -27,187 +27,6 @@
 
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
-        </head>
-        <style>/* =========================
-   GLOBAL THEME
-========================= */
-body {
-    font-family: "Poppins", sans-serif;
-}
-
-/* COLORS */
-:root {
-    --navy: #0a1f44;
-    --red: #cc0000;
-    --light: #ffffff;
-}
-.custom-sidebar {
-    width: 280px;
-    min-height: 100vh;
-    background: linear-gradient(
-        rgba(0, 58, 102, 0.9),
-        rgba(0, 58, 102, 0.8)
-    );
-}
-
-/* =========================
-   NAVBAR BASE (GLASS STYLE)
-========================= */
-.custom-navbar {
-    background: rgba(255,255,255,0.92);
-    backdrop-filter: blur(12px);
-    box-shadow: 0 6px 25px rgba(0,0,0,0.06);
-    border-bottom: 1px solid rgba(0,0,0,0.05);
-}
-
-/* =========================
-   BRAND
-========================= */
-.logo-img {
-    width: 55px;
-    height: 55px;
-    object-fit: contain;
-}
-
-.brand-text {
-    font-size: 20px;
-    font-weight: 800;
-    color: var(--navy);
-    letter-spacing: 1px;
-}
-
-.brand-text span {
-    color: var(--red);
-}
-
-/* =========================
-   NAV LINKS (DESKTOP)
-========================= */
-.nav-link {
-    margin: 0 14px;
-    font-weight: 600;
-    color: #222;
-    position: relative;
-    transition: 0.3s ease;
-}
-
-/* RED SHINE LINE */
-.nav-link::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    width: 0%;
-    height: 2px;
-    background: linear-gradient(90deg, #ff0000, #ff4d4d);
-    box-shadow: 0 0 8px rgba(255,0,0,0.4);
-    transition: 0.3s ease;
-}
-
-.nav-link:hover::after,
-.nav-link.active::after {
-    width: 100%;
-}
-
-.nav-link:hover {
-    color: var(--red);
-}
-
-/* =========================
-   BUTTONS
-========================= */
-.btn-search {
-    width: 42px;
-    height: 42px;
-    border-radius: 50%;
-    background: #f2f5fa;
-    color: var(--navy);
-    border: none;
-}
-
-.btn-quote {
-    background: linear-gradient(45deg, #ff0000, #990000);
-    color: white;
-    padding: 10px 24px;
-    border-radius: 30px;
-    font-weight: 600;
-    box-shadow: 0 8px 20px rgba(255,0,0,0.25);
-    transition: 0.3s;
-}
-
-.btn-quote:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 12px 30px rgba(255,0,0,0.35);
-}
-
-/* =========================
-   DROPDOWN
-========================= */
-.dropdown-menu {
-    border: none;
-    border-radius: 14px;
-    padding: 12px;
-    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
-}
-
-.dropdown-item {
-    border-radius: 8px;
-    padding: 10px 12px;
-}
-
-.dropdown-item:hover {
-    background: #ffe5e5;
-    color: var(--red);
-}
-
-/* =========================
-   SIDEBAR (MOBILE)
-========================= */
-.custom-sidebar {
-    width: 280px;
-    background: #ffffff;
-}
-
-/* SIDEBAR LINKS */
-.sidebar-link {
-    display: block;
-    padding: 12px;
-    font-weight: 600;
-    color: #222;
-    border-radius: 10px;
-    transition: 0.3s;
-}
-
-.sidebar-link:hover,
-.sidebar-link.active {
-    background: linear-gradient(45deg, #ffe5e5, #ffffff);
-    color: var(--red);
-}
-
-/* SIDEBAR TITLE */
-.sidebar-title {
-    margin-top: 15px;
-    font-weight: 700;
-    color: var(--navy);
-}
-
-/* =========================
-   MOBILE TOGGLER
-========================= */
-.navbar-toggler {
-    border: none;
-    font-size: 22px;
-    color: var(--red);
-}
-
-/* =========================
-   RESPONSIVE
-========================= */
-@media (max-width: 768px) {
-    .brand-text {
-        font-size: 16px;
-    }
-}</style>
     </head>
 
     <body>
@@ -265,82 +84,44 @@ body {
         </div>
         <!-- Topbar End -->
 
-   <!-- NAVBAR START -->
-<div class="container-fluid nav-bar p-0">
-    <nav class="navbar navbar-expand-lg custom-navbar px-4 px-lg-5 py-3">
-
-        <!-- LOGO -->
-        <a href="#" class="navbar-brand d-flex align-items-center gap-3">
-            <img src="logo.jpg" alt="Logo" class="logo-img">
-            <h2 class="brand-text m-0">MAPLESPARK CLEANERS</h2>
-        </a>
-
-        <!-- TOGGLER -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileSidebar">
-            <span class="fa fa-bars"></span>
-        </button>
-
-        <!-- DESKTOP MENU -->
-        <div class="collapse navbar-collapse d-none d-lg-flex" id="navbarCollapse">
-            <div class="navbar-nav ms-auto">
-
-                <a href="index.html" class="nav-link active">Home</a>
-                <a href="about.html" class="nav-link">About</a>
-                <a href="service.html" class="nav-link">Service</a>
-
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                    <div class="dropdown-menu">
-                        <a href="feature.html" class="dropdown-item">Feature</a>
-                        <a href="countries.html" class="dropdown-item">Countries</a>
-                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                        <a href="training.html" class="dropdown-item">Training</a>
-                        <a href="404.html" class="dropdown-item">404 Page</a>
-                    </div>
-                </div>
-
-                <a href="contact.html" class="nav-link">Contact</a>
-            </div>
-
-            <!-- ACTIONS -->
-            <div class="d-flex align-items-center ms-3">
-                <button class="btn btn-search me-2" data-bs-toggle="modal" data-bs-target="#searchModal">
-                    <i class="fas fa-search"></i>
+        <!-- Navbar & Hero Start -->
+        <div class="container-fluid nav-bar p-0">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <h1 class="display-5 text-secondary m-0"><h1 style="display:flex; align-items:center; gap:12px;">
+  <img src="logo.jpg" alt="Travisa logo"
+       style="width:120px; height:120px; object-fit:contain; display:block;" />
+  MAPLESPARK CLEANERS
+</h1>
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
                 </button>
-                <a href="#" class="btn btn-quote">Get A Quote</a>
-            </div>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="service.html" class="nav-item nav-link">Service</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link" data-bs-toggle="dropdown"><span class="dropdown-toggle">Pages</span></a>
+                            <div class="dropdown-menu m-0">
+                                <a href="feature.html" class="dropdown-item">Feature</a>
+                                <a href="countries.html" class="dropdown-item">Countries</a>
+                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                                <a href="training.html" class="dropdown-item">Training</a>
+                                <a href="404.html" class="dropdown-item">404 Page</a>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <button class="btn btn-primary btn-md-square border-secondary mb-3 mb-md-3 mb-lg-0 me-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search"></i></button>
+                    <a href="" class="btn btn-primary border-secondary rounded-pill py-2 px-4 px-lg-3 mb-3 mb-md-3 mb-lg-0">Get A Quote</a>
+                </div>
+            </nav>
         </div>
-    </nav>
-</div>
+        <!-- Navbar & Hero End -->
 
-<!-- MOBILE SIDEBAR -->
-<div class="offcanvas offcanvas-end custom-sidebar" tabindex="-1" id="mobileSidebar">
-    
-    <div class="offcanvas-header border-bottom">
-        <h5 class="fw-bold">Menu</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
-    </div>
-
-    <div class="offcanvas-body">
-
-        <a href="index.html" class="sidebar-link active">Home</a>
-        <a href="about.html" class="sidebar-link">About</a>
-        <a href="service.html" class="sidebar-link">Service</a>
-
-        <div class="sidebar-group">
-            <p class="sidebar-title">Pages</p>
-            <a href="feature.html">Feature</a>
-            <a href="countries.html">Countries</a>
-            <a href="testimonial.html">Testimonial</a>
-            <a href="training.html">Training</a>
-            <a href="404.html">404 Page</a>
-        </div>
-
-        <a href="contact.html" class="sidebar-link">Contact</a>
-
-        <a href="#" class="btn btn-quote w-100 mt-4">Get A Quote</a>
-    </div>
-</div>
 
         <!-- Carousel Start -->
         <div class="carousel-header">
