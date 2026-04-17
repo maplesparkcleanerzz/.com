@@ -88,96 +88,130 @@
         <div class="container-fluid nav-bar p-0">
             <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0">
 <!-- NAVBAR - Logo stays ONE ROW -->
-<a href="" class="navbar-brand p-0">
-    <div class="d-flex align-items-center" 
-         style="gap:6px; flex-wrap:nowrap; overflow:hidden; height:70px; font-size:0;">
-        <img src="logo.jpg" alt="Travisa logo"
-             style="width:75px; height:55px; max-width:75px; max-height:55px;
-                    object-fit:contain; flex-shrink:0;" />
-        <span style="font-size:15px; font-weight:600; 
-                     white-space:nowrap; overflow:hidden; text-overflow:ellipsis; 
-                     line-height:1.2; flex-shrink:1; color:#2c3e50;">
-            MAPLESPARK CLEANERS
-        </span>
+<!-- PREMIUM NAVBAR - ONE ROW GUARANTEED -->
+<nav class="navbar navbar-expand-lg p-0" style="background:rgba(255,255,255,0.95); backdrop-filter:blur(20px);">
+    <div class="container-fluid p-2">
+        
+        <!-- LOGO + LINE + NAME = ONE ROW -->
+        <a href="" class="navbar-brand p-0 d-flex align-items-center" 
+           style="gap:8px; flex-wrap:nowrap; overflow:hidden; height:65px; font-size:0; z-index:10;">
+            
+            <!-- GOLD LINE BEFORE LOGO -->
+            <div style="width:3px; height:45px; background:linear-gradient(180deg, #dc2626, #b91c1c); 
+                        border-radius:2px; flex-shrink:0; box-shadow:0 2px 8px rgba(220,38,38,0.4);"></div>
+            
+            <!-- LOGO -->
+            <img src="logo.jpg" alt="Maplespark Cleaners"
+                 style="width:70px; height:50px; max-width:70px; max-height:50px;
+                        object-fit:contain; flex-shrink:0;" />
+            
+            <!-- COMPANY NAME - Times New Roman Bold -->
+            <span style="font-family:'Times New Roman', Times, serif; 
+                         font-size:16px; font-weight:900; 
+                         background:linear-gradient(135deg, #dc2626, #b91c1c);
+                         -webkit-background-clip:text; -webkit-text-fill-color:transparent;
+                         background-clip:text; white-space:nowrap; overflow:hidden; 
+                         text-overflow:ellipsis; line-height:1.1; flex-shrink:1;
+                         text-shadow:1px 1px 2px rgba(0,0,0,0.1); letter-spacing:0.5px;">
+                MAPLESPARK CLEANERS
+            </span>
+        </a>
+
+        <!-- SINGLE PREMIUM ICON BUTTON -->
+        <button class="navbar-toggler p-1 border-0 shadow-sm me-2" type="button" 
+                data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                style="width:44px; height:44px; border-radius:12px; 
+                       background:linear-gradient(135deg, #1e3a5f, #0f172a);
+                       color:#fff; font-size:18px; line-height:1; 
+                       box-shadow:0 6px 20px rgba(30,58,95,0.4),
+                                  inset 0 1px 0 rgba(255,255,255,0.2);
+                       border:2px solid rgba(255,255,255,0.2);">
+            <i class="fas fa-bars" style="font-size:16px; font-weight:300;"></i>
+        </button>
+
+        <!-- PREMIUM OUTLINE SIDEBAR -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-center" 
+                style="gap:6px; flex-wrap:nowrap; height:65px;">
+                
+                <!-- NAVY OUTLINE BUTTON 1 -->
+                <li class="nav-item">
+                    <a class="nav-link px-3 py-2 rounded-pill fw-bold text-center" href="#" 
+                       style="min-width:85px; height:42px; 
+                              border:3px solid #1e3a5f; color:#1e3a5f;
+                              font-family:'Times New Roman', Times, serif; font-size:13px; 
+                              font-weight:900; letter-spacing:1px; line-height:1.3;
+                              background:rgba(30,58,95,0.05); backdrop-filter:blur(10px);
+                              box-shadow:0 4px 15px rgba(30,58,95,0.2);
+                              transition:all 0.3s cubic-bezier(0.4,0,0.2,1);">
+                        🏠 HOME
+                    </a>
+                </li>
+                
+                <!-- RED OUTLINE BUTTON 2 -->
+                <li class="nav-item">
+                    <a class="nav-link px-3 py-2 rounded-pill fw-bold text-center" href="#" 
+                       style="min-width:85px; height:42px; 
+                              border:3px solid #dc2626; color:#dc2626;
+                              font-family:'Times New Roman', Times, serif; font-size:13px; 
+                              font-weight:900; letter-spacing:1px; line-height:1.3;
+                              background:rgba(220,38,38,0.05); backdrop-filter:blur(10px);
+                              box-shadow:0 4px 15px rgba(220,38,38,0.25);
+                              transition:all 0.3s cubic-bezier(0.4,0,0.2,1);">
+                        🧼 SERVICES
+                    </a>
+                </li>
+                
+                <!-- NAVY OUTLINE BUTTON 3 -->
+                <li class="nav-item">
+                    <a class="nav-link px-3 py-2 rounded-pill fw-bold text-center" href="#" 
+                       style="min-width:85px; height:42px; 
+                              border:3px solid #1e3a5f; color:#1e3a5f;
+                              font-family:'Times New Roman', Times, serif; font-size:13px; 
+                              font-weight:900; letter-spacing:1px; line-height:1.3;
+                              background:rgba(30,58,95,0.05); backdrop-filter:blur(10px);
+                              box-shadow:0 4px 15px rgba(30,58,95,0.2);
+                              transition:all 0.3s cubic-bezier(0.4,0,0.2,1);">
+                        ℹ️ ABOUT
+                    </a>
+                </li>
+                
+                <!-- PREMIUM RED BOOK BUTTON -->
+                <li class="nav-item">
+                    <a class="nav-link px-4 py-2 rounded-pill fw-bold text-center" href="#" 
+                       style="min-width:95px; height:46px; 
+                              background:linear-gradient(135deg, #dc2626, #b91c1c);
+                              color:#fff; border:3px solid #dc2626;
+                              font-family:'Times New Roman', Times, serif; font-size:13px; 
+                              font-weight:900; letter-spacing:1px; line-height:1.3;
+                              box-shadow:0 6px 25px rgba(220,38,38,0.4);
+                              transition:all 0.3s cubic-bezier(0.4,0,0.2,1);">
+                        📞 BOOK NOW
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
-</a>
-
-<!-- SINGLE PROFESSIONAL ICON BUTTON -->
-<button class="navbar-toggler p-1 border-0 shadow-sm" type="button" 
-        data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-        style="width:42px; height:42px; border-radius:8px; 
-               background:linear-gradient(135deg, #1e3a5f, #0f172a);
-               color:#fff; font-size:16px; line-height:1; box-shadow:0 4px 12px rgba(30,58,95,0.3);">
-    <i class="fas fa-bars" style="font-size:18px;"></i>
-</button>
-
-<!-- PROFESSIONAL Maple Red + Navy Sidebar -->
-<div class="collapse navbar-collapse" id="navbarCollapse">
-    <ul class="navbar-nav ms-auto mb-2 mb-lg-0" style="gap:4px;">
-        
-        <!-- NAVY BLUE SECTION -->
-        <li class="nav-item">
-            <a class="nav-link px-4 py-2 rounded-3 fw-semibold" href="#" 
-               style="background:linear-gradient(135deg, #1e3a5f, #0f172a); 
-                      color:#ffffff; border:2px solid #334155; 
-                      box-shadow:0 4px 12px rgba(30,58,95,0.3);
-                      transition:all 0.3s ease; font-size:15px;">
-                🏠 Home
-            </a>
-        </li>
-        
-        <!-- MAPLE RED SECTION -->
-        <li class="nav-item">
-            <a class="nav-link px-4 py-2 rounded-3 fw-semibold" href="#" 
-               style="background:linear-gradient(135deg, #dc2626, #b91c1c); 
-                      color:#ffffff; border:2px solid #991b1b; 
-                      box-shadow:0 4px 12px rgba(220,38,38,0.4);
-                      transition:all 0.3s ease; font-size:15px;">
-                🧼 Services
-            </a>
-        </li>
-        
-        <!-- NAVY BLUE SECTION -->
-        <li class="nav-item">
-            <a class="nav-link px-4 py-2 rounded-3 fw-semibold" href="#" 
-               style="background:linear-gradient(135deg, #1e3a5f, #0f172a); 
-                      color:#ffffff; border:2px solid #334155; 
-                      box-shadow:0 4px 12px rgba(30,58,95,0.3);
-                      transition:all 0.3s ease; font-size:15px;">
-                ℹ️ About
-            </a>
-        </li>
-        
-        <!-- MAPLE RED CTA -->
-        <li class="nav-item">
-            <a class="nav-link px-4 py-2 rounded-3 fw-bold" href="#" 
-               style="background:linear-gradient(135deg, #dc2626, #b91c1c); 
-                      color:#ffffff; border:2px solid #991b1b; 
-                      box-shadow:0 6px 20px rgba(220,38,38,0.5);
-                      transform:translateY(0); transition:all 0.3s ease;
-                      font-size:15px; letter-spacing:0.5px;">
-                📞 Book Now
-            </a>
-        </li>
-    </ul>
-</div>
+</nav>
 
 <style>
-.navbar-nav { display:flex !important; flex-wrap:nowrap !important; gap:4px !important; }
+.navbar-nav { display:flex !important; flex-wrap:nowrap !important; }
 @media (max-width:991px) {
-    .navbar-nav { flex-direction:column !important; gap:8px !important; width:100%; }
+    .navbar-nav { flex-direction:column !important; gap:10px !important; 
+                  width:100%; align-items:stretch !important; }
+    .nav-link { min-width:100% !important; }
 }
 .nav-link:hover {
-    transform:translateY(-2px) !important;
-    box-shadow:0 8px 25px rgba(0,0,0,0.3) !important;
-    border-color:#ffffff20 !important;
+    transform:translateY(-3px) scale(1.05) !important;
+    box-shadow:0 10px 30px rgba(0,0,0,0.3) !important;
+    border-color:#ffffff !important;
 }
-.navbar-toggler:focus { box-shadow:0 0 0 0.2rem rgba(30,58,95,0.25) !important; }
+.navbar-toggler:focus { box-shadow:0 0 0 0.25rem rgba(220,38,38,0.25) !important; }
+.navbar-toggler:active { transform:scale(0.95); }
 </style>
 
-<!-- ADD FontAwesome for icon (or use SVG) -->
+<!-- FontAwesome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
 
  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="fa fa-bars"></span>
