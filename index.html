@@ -413,45 +413,162 @@
 <!-- HEADER -->
 <div style="text-align:center;margin-bottom:40px;">
 
-    <div style="
+  
+<div style="
+    text-align:center;
+    padding:55px 18px;
+    background:linear-gradient(135deg,#ffffff,#f5f7ff);
+    position:relative;
+    overflow:hidden;
+    font-family:'Poppins',Arial,sans-serif;
+">
+
+<!-- soft glow -->
+<div style="
+    position:absolute;
+    top:-140px;
+    left:-140px;
+    width:280px;
+    height:280px;
+    background:#a41a1f;
+    opacity:0.05;
+    border-radius:50%;
+    filter:blur(50px);
+"></div>
+
+<div style="
+    position:absolute;
+    bottom:-140px;
+    right:-140px;
+    width:300px;
+    height:300px;
+    background:#061944;
+    opacity:0.05;
+    border-radius:50%;
+    filter:blur(50px);
+"></div>
+
+<!-- badge -->
+<div style="
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    padding:8px 16px;
+    border-radius:999px;
+    font-size:11px;
+    font-weight:800;
+    letter-spacing:0.5px;
+    color:#061944;
+    background:linear-gradient(135deg, #ffffff, #f6f8ff);
+    border:1px solid rgba(6,25,68,0.18);
+    box-shadow:0 10px 25px rgba(6,25,68,0.10);
+    position:relative;
+    overflow:hidden;
+">
+
+    <!-- soft red glow accent -->
+    <span style="
+        position:absolute;
+        left:-30px;
+        top:-30px;
+        width:80px;
+        height:80px;
+        background:#a41a1f;
+        opacity:0.10;
+        filter:blur(20px);
+        border-radius:50%;
+    "></span>
+
+    <!-- icon -->
+    <span style="
         display:inline-flex;
         align-items:center;
-        gap:8px;
-        padding:6px 16px;
-        border-radius:50px;
-        font-size:12px;
-        color:#061944;
-        background:rgba(255,255,255,0.8);
-        border:1px solid rgba(164,26,31,0.2);
-        box-shadow:0 8px 20px rgba(0,0,0,0.05);
-    ">
-        <span>✨</span> PREMIUM CLEANING SERVICE
-    </div>
+        justify-content:center;
+        width:18px;
+        height:18px;
+        border-radius:50%;
+        background:#a41a1f;
+        color:#fff;
+        font-size:10px;
+        box-shadow:0 4px 10px rgba(164,26,31,0.25);
+        z-index:1;
+    ">✦</span>
 
-    <h1 style="
-        font-size:clamp(24px,5vw,36px);
-        font-weight:900;
-        color:#061944;
-        margin:14px 0 10px 0;
-        letter-spacing:1px;
-        text-transform:uppercase;
-    ">
-        Maple Spark Cleaners
-    </h1>
-
-    <p style="
-        max-width:750px;
-        margin:auto;
-        font-size:15px;
-        color:#555;
-        line-height:1.8;
-    ">
-        Luxury-grade eco-friendly cleaning across GTA, Peel, York & Durham.
-        Designed for spotless homes, premium offices, and deep restoration cleaning.
-    </p>
+    <!-- text -->
+    <span style="z-index:1; color:#061944;">
+        Premium Cleaning Service
+    </span>
 
 </div>
 
+<!-- MAIN TEXT -->
+<h1 id="heroTitle" style="
+    font-size:clamp(18px,4.5vw,26px);
+    font-weight:800;
+    color:#061944;
+    margin:14px 0 10px 0;
+    line-height:1.4;
+    transition:opacity 0.6s ease;
+">
+    Luxury Cleaning Experience
+</h1>
+
+<!-- SUB TEXT -->
+<p id="heroSub" style="
+    max-width:680px;
+    margin:auto;
+    font-size:13.5px;
+    color:#666;
+    line-height:1.9;
+    transition:opacity 0.6s ease;
+">
+    Premium eco-friendly cleaning for homes that deserve care, comfort, and long-lasting freshness.
+</p>
+
+</div>
+
+<script>
+const titles = [
+    "Luxury Cleaning Experience",
+    "Pure Comfort, Perfectly Clean Living",
+    "Trusted Eco-Friendly Cleaning Experts",
+    "Deep Cleaning With Professional Care",
+    "A Fresher, Healthier Home Every Day"
+];
+
+const subtitles = [
+    "Premium eco-friendly cleaning for homes that deserve care, comfort, and long-lasting freshness every single day.",
+
+    "We transform your space into a spotless and peaceful environment where cleanliness meets comfort and elegance.",
+
+    "Serving families across GTA with safe, reliable, and highly professional cleaning services you can always trust.",
+
+    "Every corner is cleaned with precision, ensuring deep hygiene, freshness, and a beautifully maintained home.",
+
+    "Enjoy consistent, high-quality cleaning that keeps your home shining, fresh, and welcoming every single day."
+];
+
+let i = 0;
+
+setInterval(() => {
+    const t = document.getElementById("heroTitle");
+    const s = document.getElementById("heroSub");
+
+    t.style.opacity = "0";
+    s.style.opacity = "0";
+
+    setTimeout(() => {
+        i = (i + 1) % titles.length;
+
+        t.textContent = titles[i];
+        s.textContent = subtitles[i];
+
+        t.style.opacity = "1";
+        s.style.opacity = "1";
+    }, 350);
+
+}, 3000);
+</script>
 <!-- TRUST CARDS -->
 <div style="
     display:grid;
