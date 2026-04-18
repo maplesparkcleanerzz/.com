@@ -926,87 +926,104 @@ setInterval(() => {
 
 
 <!-- About Start -->
-<div class="container-fluid py-5" style="font-family: 'Times New Roman', serif;">
+<div class="container-fluid py-5" style="font-family: 'Times New Roman', serif; background: linear-gradient(135deg, #f8f9fa, #eef3f9); overflow: hidden;">
     <div class="container py-5">
-        <div class="row g-5">
+        <div class="row g-5 align-items-center">
 
+            <!-- LEFT IMAGES -->
             <div class="col-xl-5 wow fadeInLeft" data-wow-delay="0.1s">
-                <div class="bg-light rounded">
-                    <img src="img/about-2.png" class="img-fluid w-100" style="margin-bottom: -7px;" alt="Cleaning Service">
-                    <img src="a3.jpg" class="img-fluid w-100 border-bottom border-5 border-primary" style="border-top-right-radius: 300px; border-top-left-radius: 300px;" alt="Cleaning Team">
+                <div class="bg-light rounded shadow-sm position-relative overflow-hidden">
+
+                    <img src="a2.jpg" 
+                         class="img-fluid w-100" 
+                         style="margin-bottom: -5px; object-fit: cover;" 
+                         alt="Cleaning Service">
+
+                    <img src="a3.jpg" 
+                         class="img-fluid w-100 border-bottom border-5 border-primary" 
+                         style="border-top-right-radius: 200px; border-top-left-radius: 200px; object-fit: cover;" 
+                         alt="Cleaning Team">
+
                 </div>
             </div>
 
+            <!-- RIGHT CONTENT -->
             <div class="col-xl-7 wow fadeInRight" data-wow-delay="0.3s">
 
-                <h5 class="sub-title pe-3">About Our Cleaning Company</h5>
+                <h5 class="sub-title pe-3" style="color:#0b1f3a; font-weight:bold;">
+                    About Our Cleaning Company
+                </h5>
 
-                <h1 class="display-5 mb-4">
-                    We Provide Professional Cleaning Services for Homes & Offices
+                <h1 class="display-5 mb-4" style="font-weight:bold; color:#0b1f3a;">
+                    We Provide <span style="color:#c40000;">Professional Cleaning</span> 
+                    Services for Homes & Offices
                 </h1>
 
-                <p class="mb-4">
+                <p class="mb-4" style="color:#555;">
                     Our expert cleaning team delivers high-quality, reliable, and affordable cleaning services. 
                     We ensure your space stays fresh, hygienic, and spotless using safe and effective cleaning methods.
                 </p>
 
                 <div class="row gy-4 align-items-center">
 
+                    <!-- FEATURES -->
                     <div class="col-12 col-sm-6 d-flex align-items-center">
-                        <i class="fas fa-broom fa-3x text-secondary"></i>
-                        <h5 class="ms-4">Deep Cleaning Experts</h5>
+                        <i class="fas fa-broom fa-3x" style="color:#c40000;"></i>
+                        <h5 class="ms-4" style="color:#0b1f3a;">Deep Cleaning Experts</h5>
                     </div>
 
                     <div class="col-12 col-sm-6 d-flex align-items-center">
-                        <i class="fas fa-spray-can fa-3x text-secondary"></i>
-                        <h5 class="ms-4">Safe Cleaning Products</h5>
+                        <i class="fas fa-spray-can fa-3x" style="color:#c40000;"></i>
+                        <h5 class="ms-4" style="color:#0b1f3a;">Safe Cleaning Products</h5>
                     </div>
 
+                    <!-- EXPERIENCE -->
                     <div class="col-4 col-md-3">
-                        <div class="bg-light text-center rounded p-3">
+                        <div class="bg-white text-center rounded p-3 shadow-sm" style="border-top:4px solid #0b1f3a;">
                             <div class="mb-2">
-                                <i class="fas fa-star fa-4x text-primary"></i>
+                                <i class="fas fa-star fa-3x" style="color:#c40000;"></i>
                             </div>
-                            <h1 class="display-5 fw-bold mb-2">10+</h1>
-                            <p class="text-muted mb-0">Years of Experience</p>
+                            <h1 class="display-6 fw-bold mb-1" style="color:#0b1f3a;">10+</h1>
+                            <p class="text-muted mb-0 small">Years Experience</p>
                         </div>
                     </div>
 
+                    <!-- DETAILS -->
                     <div class="col-8 col-md-9">
-                        <div class="mb-5">
+                        <div class="mb-4">
 
-                            <p class="text-primary h6 mb-3">
-                                <i class="fa fa-check-circle text-secondary me-2"></i>
+                            <p class="h6 mb-2" style="color:#0b1f3a;">
+                                <i class="fa fa-check-circle me-2" style="color:#c40000;"></i>
                                 100% Customer Satisfaction
                             </p>
 
-                            <p class="text-primary h6 mb-3">
-                                <i class="fa fa-check-circle text-secondary me-2"></i>
+                            <p class="h6 mb-2" style="color:#0b1f3a;">
+                                <i class="fa fa-check-circle me-2" style="color:#c40000;"></i>
                                 Fast & Reliable Cleaning Service
                             </p>
 
-                            <p class="text-primary h6 mb-3">
-                                <i class="fa fa-check-circle text-secondary me-2"></i>
+                            <p class="h6 mb-2" style="color:#0b1f3a;">
+                                <i class="fa fa-check-circle me-2" style="color:#c40000;"></i>
                                 Affordable & Professional Team
                             </p>
 
                         </div>
 
-                        <div class="d-flex flex-wrap">
+                        <!-- PHONE -->
+                        <div class="d-flex flex-wrap align-items-center">
 
-                            <div id="phone-tada" class="d-flex align-items-center justify-content-center me-4">
+                            <div id="phone-tada" class="d-flex align-items-center justify-content-center me-3">
                                 <a href="tel:+923001234567" class="position-relative wow tada" data-wow-delay=".9s">
-                                    <i class="fa fa-phone-alt text-primary fa-3x"></i>
-                                    <div class="position-absolute" style="top: 0; left: 25px;">
-                                        <span><i class="fa fa-comment-dots text-secondary"></i></span>
-                                    </div>
+                                    <i class="fa fa-phone-alt fa-2x p-3 rounded-circle" 
+                                       style="background:#0b1f3a; color:#fff;"></i>
                                 </a>
                             </div>
 
                             <div class="d-flex flex-column justify-content-center">
-                                <span class="text-primary">Have any questions?</span>
-                                <a href="tel:+923001234567" class="text-secondary fw-bold fs-5" style="letter-spacing: 2px; text-decoration:none;">
-                                    +92 300 1234567
+                                <span style="color:#555;">Have any questions?</span>
+                                <a href="tel:+923001234567" 
+                                   style="color:#0b1f3a; font-weight:bold; font-size:18px; text-decoration:none; letter-spacing:1px;">
+                                   +92 300 1234567
                                 </a>
                             </div>
 
