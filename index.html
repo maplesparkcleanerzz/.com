@@ -502,7 +502,14 @@
 
   </div>
 </div>
-<div style="width:100%; display:flex; justify-content:center; padding:10px;">
+<style>
+@keyframes shineMove {
+  0% { left: -120%; }
+  100% { left: 120%; }
+}
+</style>
+
+<div style="width:100%; display:flex; justify-content:center; padding: 10px; ">
 
   <a href="q.html" style="
     position:relative;
@@ -512,13 +519,13 @@
     align-items:center;
     justify-content:center;
 
-    padding:12px 22px;
-    min-width:170px;
+    padding:10px 18px;
+    min-width:180px;
 
     border-radius:50px;
 
     font-family:'Times New Roman', serif;
-    font-size:14px;
+    font-size:16px;
     font-weight:bold;
 
     color:#fff;
@@ -529,7 +536,7 @@
       rgba(10,31,68,0.95)
     );
 
-    box-shadow:0 6px 16px rgba(0,0,0,0.16);
+    box-shadow:0 8px 20px rgba(0,0,0,0.18);
     border:1px solid rgba(255,255,255,0.25);
   ">
 
@@ -549,7 +556,7 @@
         transparent
       );
       transform:skewX(-20deg);
-      animation: shineMove 1.8s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+     animation: shineMove 1.8s cubic-bezier(0.4, 0, 0.2, 1) infinite;
     "></span>
 
   </a>
