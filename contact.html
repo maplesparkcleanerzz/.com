@@ -398,6 +398,60 @@
     </div>
 </div>
 
+                    <div class="d-flex">
+                      <div style="display:flex; gap:6px; align-items:center; justify-content:center;">
+
+    <span class="c-line"></span>
+    <span class="c-line"></span>
+    <span class="c-line"></span>
+    <span class="c-line"></span>
+    <span class="c-line"></span>
+    <span class="c-line"></span>
+    <span class="c-line"></span>
+    <span class="c-line"></span>
+    <span class="c-line"></span>
+
+</div>
+
+<style>
+.c-line{
+    width:18px;
+    height:3px;
+    border-radius:10px;
+    background:#b3001b;
+    display:inline-block;
+    animation:cleanWave 1.4s infinite ease-in-out;
+}
+
+/* wave delay for smooth motion */
+.c-line:nth-child(1){animation-delay:0s;}
+.c-line:nth-child(2){animation-delay:0.1s;}
+.c-line:nth-child(3){animation-delay:0.2s;}
+.c-line:nth-child(4){animation-delay:0.3s;}
+.c-line:nth-child(5){animation-delay:0.4s;}
+.c-line:nth-child(6){animation-delay:0.5s;}
+.c-line:nth-child(7){animation-delay:0.6s;}
+.c-line:nth-child(8){animation-delay:0.7s;}
+.c-line:nth-child(9){animation-delay:0.8s;}
+
+@keyframes cleanWave{
+    0%{
+        transform:scaleY(1);
+        background:#b3001b;
+        opacity:0.7;
+    }
+    50%{
+        transform:scaleY(2.2);
+        background:#000080;
+        opacity:1;
+    }
+    100%{
+        transform:scaleY(1);
+        background:#b3001b;
+        opacity:0.7;
+    }
+}
+</style>
 <style>
 
 /* ✅ FIX: scope styles so they DO NOT affect your sidebar/navigation buttons */
