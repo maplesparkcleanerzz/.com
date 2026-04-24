@@ -675,6 +675,150 @@ document.addEventListener('focusin', (e) => {
 });
 
 </script>
+<!-- PREMIUM REALISTIC EXPERT SECTION -->
+<div style="width:100%; padding:70px 15px; background:#ffffff; font-family:'Times New Roman',serif; text-align:center;">
+
+    <h2 style="font-size:34px; color:#002147; font-weight:700; margin-bottom:10px;">
+        Get Honest Advice From Cleaning Experts
+    </h2>
+
+    <p style="max-width:700px; margin:auto; color:#555; font-size:15px; line-height:1.8;">
+        Not sure what kind of cleaning you need or what it might cost? Our team is here to help. 
+        You can ask questions, explain your situation, and get clear, straightforward guidance 
+        based on real experience — no pressure, just helpful advice.
+    </p>
+
+    <!-- GLOBAL STATUS -->
+    <div style="margin-top:18px; display:inline-flex; align-items:center; gap:10px; background:#f4fff7; padding:8px 16px; border-radius:30px; font-size:13px; color:#25D366; font-weight:600;">
+        <span style="width:10px; height:10px; background:#25D366; border-radius:50%; animation:pulse 1.5s infinite;"></span>
+        2 Experts Online • Usually replies quickly
+    </div>
+
+    <!-- EXPERT CARDS -->
+    <div style="display:flex; justify-content:center; gap:30px; margin-top:45px; flex-wrap:wrap;">
+
+        <!-- EXPERT 1 -->
+        <div style="width:320px; background:#fff; border-radius:25px; padding:25px; box-shadow:0 15px 40px rgba(0,0,0,0.08); position:relative;">
+
+            <div style="position:absolute; top:15px; right:15px; background:#002147; color:white; font-size:11px; padding:5px 10px; border-radius:20px;">
+                ✔ Verified
+            </div>
+
+            <img src="f.jpg" 
+            style="width:95px; height:95px; border-radius:50%; border:4px solid #25D366;">
+
+            <h3 style="margin-top:12px; color:#002147;">Feroze Butt</h3>
+
+            <div style="display:flex; justify-content:center; align-items:center; gap:6px; font-size:12px; color:#25D366; font-weight:600;">
+                <span style="width:8px; height:8px; background:#25D366; border-radius:50%; animation:pulse 1.5s infinite;"></span>
+                Active Now
+            </div>
+
+            <p style="font-size:13px; color:#888; margin:8px 0;">Senior Cleaning Consultant</p>
+
+            <p style="font-size:13px; color:#555; line-height:1.6;">
+                I usually help people figure out what type of cleaning actually fits their situation. 
+                Whether it's stains, dust buildup, or preparing a place — you can just message me and explain, 
+                and I’ll guide you based on what I’ve seen work best.
+            </p>
+
+            <div style="display:flex; justify-content:space-between; margin:15px 0; font-size:12px;">
+                <div><b>900+</b><br>Cases</div>
+                <div><b>★ 6+</b><br>Years Experience</div>
+                <div><b>Fast</b><br>Reply</div>
+            </div>
+
+            <button onclick="openWA()" 
+            style="width:100%; background:#25D366; color:white; padding:13px; border:none; border-radius:30px; cursor:pointer; font-weight:600;">
+                Chat on WhatsApp
+            </button>
+        </div>
+
+
+        <!-- EXPERT 2 -->
+        <div style="width:320px; background:#fff; border-radius:25px; padding:25px; box-shadow:0 15px 40px rgba(0,0,0,0.08); position:relative;">
+
+            <div style="position:absolute; top:15px; right:15px; background:#002147; color:white; font-size:11px; padding:5px 10px; border-radius:20px;">
+                ✔ Verified
+            </div>
+
+            <img src="https://i.pravatar.cc/100?img=12" 
+            style="width:95px; height:95px; border-radius:50%; border:4px solid #c1272d;">
+
+            <h3 style="margin-top:12px; color:#002147;">Sauud</h3>
+
+            <div style="display:flex; justify-content:center; align-items:center; gap:6px; font-size:12px; color:#25D366; font-weight:600;">
+                <span style="width:8px; height:8px; background:#25D366; border-radius:50%; animation:pulse 1.5s infinite;"></span>
+                Available Now
+            </div>
+
+            <p style="font-size:13px; color:#888; margin:8px 0;">Service Advisor</p>
+
+            <p style="font-size:13px; color:#555; line-height:1.6;">
+                If you prefer speaking directly, you can call and explain your situation. I’ll walk you through the most suitable cleaning options and answer anything you’re unsure about — in a clear and simple way based on real experience.
+            </p>
+
+            <div style="display:flex; justify-content:space-between; margin:15px 0; font-size:12px;">
+                <div><b>600+</b><br>Guided</div>
+                <div><b>★ 5+</b><br>Years Experience</div>
+                <div><b>Clear</b><br>Advice</div>
+            </div>
+
+            <button onclick="openCall()" 
+            style="width:100%; background:#c1272d; color:white; padding:13px; border:none; border-radius:30px; cursor:pointer; font-weight:600;">
+                Call to Ask
+            </button>
+        </div>
+
+    </div>
+</div>
+
+<!-- POPUPS -->
+<div id="waBox" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.65); justify-content:center; align-items:center; z-index:9999;">
+<div style="background:#fff; padding:25px; border-radius:20px; width:90%; max-width:350px; text-align:center; font-family:'Times New Roman',serif;">
+<h3>Chat with Emily</h3>
+<p style="font-size:13px; color:#555;">
+You’ll be chatting directly with me. Feel free to describe your situation — I’ll guide you honestly.
+</p>
+<a href="https://wa.me/16473603379?text=Hi%20Emily,%20I%20wanted%20to%20ask%20about%20a%20cleaning%20situation.%20Can%20you%20guide%20me?"
+target="_blank"
+style="display:block; background:#25D366; color:white; padding:12px; border-radius:25px; text-decoration:none;">
+Send Message
+</a>
+<button onclick="closeAll()" style="margin-top:10px; border:none; background:none;">Close</button>
+</div>
+</div>
+
+<div id="callBox" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.65); justify-content:center; align-items:center; z-index:9999;">
+<div style="background:#fff; padding:25px; border-radius:20px; width:90%; max-width:350px; text-align:center; font-family:'Times New Roman',serif;">
+<h3>Talk with Michael</h3>
+<p style="font-size:13px; color:#555;">
+You’ll be speaking with me directly. Just explain your situation and I’ll help clearly.
+</p>
+<a href="tel:+16473603379"
+style="display:block; background:#c1272d; color:white; padding:12px; border-radius:25px; text-decoration:none;">
+Call Now
+</a>
+<button onclick="closeAll()" style="margin-top:10px; border:none; background:none;">Close</button>
+</div>
+</div>
+
+<style>
+@keyframes pulse {
+0% {transform: scale(1); opacity:1;}
+50% {transform: scale(1.3); opacity:0.6;}
+100% {transform: scale(1); opacity:1;}
+}
+</style>
+
+<script>
+function openWA(){document.getElementById('waBox').style.display='flex';}
+function openCall(){document.getElementById('callBox').style.display='flex';}
+function closeAll(){
+document.getElementById('waBox').style.display='none';
+document.getElementById('callBox').style.display='none';
+}
+</script>
 <div style="
     width:100%;
     padding:50px 0;
