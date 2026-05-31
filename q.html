@@ -673,10 +673,15 @@ form.addEventListener("submit", function(e){
     emailjs.sendForm("service_pdbnu97",
         "template_ezjdq9d", this)
     .then(()=>{
-        popup.innerText = "Request Sent Successfully";
-        form.reset();
-        setTimeout(()=>popup.classList.remove("show"),3000);
-    }, ()=>{
+
+    // Facebook Lead Event
+    fbq('track', 'Lead');
+
+    popup.innerText = "Request Sent Successfully";
+    form.reset();
+    setTimeout(()=>popup.classList.remove("show"),3000);
+
+}, ()=>{
         popup.innerText = "Failed to send";
         setTimeout(()=>popup.classList.remove("show"),3000);
     });
